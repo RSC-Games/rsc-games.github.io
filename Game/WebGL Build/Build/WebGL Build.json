@@ -1,0 +1,14 @@
+{
+"companyName": "RSC Inc",
+"productName": "Online Driving Game",
+"dataUrl": "WebGL Build.data.unityweb",
+"wasmCodeUrl": "WebGL Build.wasm.code.unityweb",
+"wasmFrameworkUrl": "WebGL Build.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "WebGL Build.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"}
+}
