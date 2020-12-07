@@ -47,7 +47,7 @@ if (document.cookie.split(';').some(function(item) {
     if (document.cookie.split(';').some(function(item) {
         return item.indexOf('p=active') >= 0
     })) {
-        window.location.replace("vnjihir93hrfae905830948hi3nrf904uij2.html");
+        window.location.replace("vhdjfoeiwjreoijrlej489574hhkeljfldjl.html");
     }
 }
 
