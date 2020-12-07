@@ -123,7 +123,7 @@ else if (document.cookie.split(';').some(function(item) {
 }
 
 if (document.cookie.split(';').some(function(item) {
-    return item.indexOf('uname=ethan') >= 0
+    return item.indexOf('uname=ltlevl') >= 0
 })) {
     cinco = 8;
     var passcode = ParsePassword();
@@ -131,9 +131,9 @@ if (document.cookie.split(';').some(function(item) {
     
     if (passcode.includes(hashCode) && passcode.length == hashCode.length)
     {
-        document.cookie = "sessionID=" + KeyGen("ethan");
-        document.cookie = "u=ethan";
-        document.cookie = "user=ethan";
+        document.cookie = "sessionID=" + KeyGen("ltlevl");
+        document.cookie = "u=ltlevl";
+        document.cookie = "user=ltlevl";
         document.cookie = "p=active";
         console.log("Alert! You are using a depreciated cookie (p=) that will be replaced in a future update.");
         document.cookie = "pro=true";

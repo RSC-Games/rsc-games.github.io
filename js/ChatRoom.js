@@ -1,4 +1,4 @@
-ar username = ReadCookie("user");
+var username = ReadCookie("user");
 var sessionID = ReadCookie("sessionID");
 var uID = ReadCookie("uID"); 
 
