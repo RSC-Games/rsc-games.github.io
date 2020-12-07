@@ -27,7 +27,7 @@ function save(){
         console.log("Dark Theme");
     }
     document.getElementById("saved").innerHTML = "Your changes have been saved.";
-    setTimeout() => {  document.getElementById("saved").innerHTML = "";; }, 2000);
+    setTimeout(function(){ document.getElementById("saved").innerHTML = ""; }, 2000);
 }
 
 function savePro(){
@@ -73,7 +73,7 @@ function savePro(){
             console.log("Username Removed. Using Default Username.");
         }
         document.getElementById("prosaved").innerHTML = "Your changes have been saved.";
-        setTimeout(() => {  document.getElementById("prosaved").innerHTML = "";; }, 2000);
+        setTimeout(function(){ document.getElementById("prosaved").innerHTML = ""; }, 2000);
     }
     else
     {
