@@ -1,4 +1,4 @@
-var URL = "https://scratch.mit.edu/projects/309276376/embed";
+var URL = "https://turbowarp.org/309276376/embed";
 
 function oneThousandPX(url)
 {
