@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title> RSC Games - SpaceBall</title>
+    <link rel="shortcut icon" href="../../../images/favicon.ico">
+    <script src="../../../js/css.js"></script>
+    <script src="../TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/SpaceBall.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+	 <div id="navbar">
+		<script src = "js/contentmanager.js"></script>
+		<a href = "RSC_Games.html">Games</a>
+		<a href="About_RSC.html">About</a>
+  		<a href="RSC_News.html">News</a>
+		<a href="RSC_Inc_Products.html">Products</a>
+		<a class = "active" href="index.html">Home</a>
+		<a align = "right" href = "index.html" id = "logo"><img src = "../../../images/RSC_LOGO.svg" width = "80"></a>
+	</div>
+	<h1><center> __SPACER__ </center></h1>
+   <div class="webgl-content">
+     <div id="unityContainer" style="width: 960px; height: 600px"></div>
+     <div class="footer">
+       <div class="webgl-logo"></div>
+       <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+       <div class="title">SpaceBall</div>
+     </div>
+   </div>
+ </body>
+</html>

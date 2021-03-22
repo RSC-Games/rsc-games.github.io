@@ -1,0 +1,17 @@
+{
+"companyName": "RSC Games, Iden Penguin",
+"productName": "Dominance Fight",
+"productVersion": "1.2.1",
+"dataUrl": "DominanceFight.data.unityweb",
+"wasmCodeUrl": "DominanceFight.wasm.code.unityweb",
+"wasmFrameworkUrl": "DominanceFight.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "DominanceFight.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.7f1"
+}

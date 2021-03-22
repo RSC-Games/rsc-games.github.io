@@ -1,0 +1,17 @@
+{
+"companyName": "RSC Games, IdenPenguin",
+"productName": "SpaceBall",
+"productVersion": "0.1",
+"dataUrl": "SpaceBall.data.unityweb",
+"wasmCodeUrl": "SpaceBall.wasm.code.unityweb",
+"wasmFrameworkUrl": "SpaceBall.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "SpaceBall.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.7f1"
+}
