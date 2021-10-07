@@ -1,0 +1,16 @@
+{
+"companyName": "Duckigi Games",
+"productName": "Dominance Fight 2",
+"productVersion": "1.0",
+"dataUrl": "DF2 WebGL.data.unityweb",
+"wasmCodeUrl": "DF2 WebGL.wasm.code.unityweb",
+"wasmFrameworkUrl": "DF2 WebGL.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.28f1"
+}
