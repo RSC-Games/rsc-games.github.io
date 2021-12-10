@@ -74,8 +74,8 @@ else if (document.cookie.split(';').some(function(item) {
         })) {
             document.cookie = "registerPro=true";
             document.cookie = "proRegistered=false";
-            document.cookie = "registerPro=false";
-            document.cookie = "proRegistered=true";
+            //document.cookie = "registerPro=false";
+            //document.cookie = "proRegistered=true";
         }
         window.location.replace("489789duirtwu89q893hui89uq789e789893.html");
     }
