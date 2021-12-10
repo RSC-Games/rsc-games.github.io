@@ -72,10 +72,10 @@ else if (document.cookie.split(';').some(function(item) {
         if (document.cookie.split(';').some(function(item) {
             return item.indexOf('pro=true') >= 0
         })) {
-            //document.cookie = "registerPro=true";
+            document.cookie = "registerPro=true";
             document.cookie = "proRegistered=false";
             document.cookie = "registerPro=false";
-            //document.cookie = "proRegistered=true";
+            document.cookie = "proRegistered=true";
         }
         window.location.replace("489789duirtwu89q893hui89uq789e789893.html");
     }
