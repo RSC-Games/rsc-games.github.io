@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- These fields ensure the search engine can find my site and match keywords. -->
+        <meta charset="UTF-8">
+        <meta name="description" content="RSC Games is a hardware and game development company committed 
+            to providing maximum enjoyment at a low price tag."> 
+        <meta name="keywords" content="RSC Games, SP, cheap gaming">
+        <meta name="author" content="RSC Games">
+
+        <!-- This is only here because W3Schools says I should add it. It is responsible for scaling of sites. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title> Home | RSC Games </title>
+
+        <!-- Add a background and an image in the tab. -->
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <!-- This navbar is hard to maintain across all pages. Maybe make a JS script inject a navbar here? -->
+        <div class="navbar">
+            <img class="logo" src="images/controller_logo.png" href="index.html"/>
+
+            <nav align="right" class="links">
+                <a class="active" href="index.html"> Home </a>
+                <a href="products/index.html"> Products </a>
+                <a href="news/index.html"> News </a>
+                <a href="online/index.html"> Online </a>
+                <a href="docs/index.html"> Docs </a>   
+            </nav>
+        </div>
+
+        <!-- Because I set the navbar to fixed position an offsetting block is required to ensure the site renders properly. -->
+        <h1 class="spacer"> _ </h1>
+        <br>
+
+        <!-- Create a large box around the entire site contents.-->
+        <div id="page_box">
+
+        <!-- This site requires JavaScript. Warn the user if JavaScript is disabled. -->
+        <noscript>
+            <div id="noscript_box">
+                <h2><b> JavaScript is Disabled! </b></h2>
+                <p> This site requires the use of JavaScript to function properly. Please enable it in your browser settings.</p>
+            </div>
+        </noscript>
+
+        <!-- Webpage title and content goes here. -->
+        <h1 class="title"> Welcome to RSC Games! </h1>
+
+        <div class="images_inline">
+            <img src="images/rom_screenshots/bootldr_1.png">
+            <img src="images/rom_screenshots/bootldr_2.png">
+            <img src="images/rom_screenshots/part_table.png">
+            <img src="images/rom_screenshots/app_1.png">
+        </div>
+
+        <p> We are an independent game-oriented hardware and software development company. Our mission is to provide high quality goods 
+            and services at a low price tag. Our unique business model, cheap hardware, free games, allows us to accomplish this goal. 
+            We accept donations from our company Patreon so we can continue to operate this way and encourage game developers to create 
+            for our platform. Scroll down to get a feel for our products and services!
+        </p>
+        <br>
+        <br>
+
+        <!-- Redirect to the products page and an SP announcement. -->
+        <h2> Offerings </h2>
+        <br>
+
+        <div class="listings">
+            <div class="item_listing">
+                <h3> RSC Games SP </h3>
+                <img src="images/sp_image.png">
+                <p> Our greatest product, preparing for release soon. </p>
+                <br>
+                <a href="products/index.html"> Go to Products </a>
+            </div>
+
+        </div>
+
+        <!-- Show an up-to-date copyright at the bottom. -->
+        <br>
+        <br>
+        <h6 class="copyright"> &copy 2020-present RSC Games. All Rights Reserved. </h6>
+        <script src="scripts/autocopy.js"></script>
+        </div>
+    </body>
+</html>
