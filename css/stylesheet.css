@@ -1,0 +1,212 @@
+body {
+    background-color: #222222;
+    color: #CCCCCC;
+    margin: 0;
+    font-family: Helvetica;
+}
+
+.navbar {
+    position: fixed;
+    background-color: #555555;
+    display: block;
+    margin: 0;
+    width: 100%;
+    border: 1px solid #000000;
+
+    z-index: 100;
+}
+
+/* Special configuration for the controller logo so it matched the height. */
+.navbar .logo {
+    height: 38px;
+    float: left;
+    padding: 5px;
+}
+
+/* Styles the blocky navigation bar. */
+.navbar .links {
+    padding: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
+    float: right;
+    border: 1px solid #000000;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+/* Add the highlighting and box coloring for each link. */
+.navbar .links a {
+    text-align: center;
+    padding: 15px;
+    padding-left: 17px;
+    padding-right: 14px;
+    color: #DDDDDD;
+    text-decoration: none;
+    background-color: #656565;
+    border-right: 1px solid #000000;
+    transition-duration: 500ms;
+}
+
+/* Change the color of the navbar link when it is hovered on */
+.navbar .links a:hover {
+    background-color: #888888;
+    transition-duration: 500ms;
+}
+
+/* Set the color of the active bar. */
+.navbar .links a.active {
+    background-color: #999999;
+    color: #FFFFFF;
+}
+
+/* Set the color of the active bar. */
+.navbar .links a.active:hover {
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    transition-duration: 1s;
+}
+
+
+/* Fancy scrollbar creation. This is nonstandard. */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #AAAAAA;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #BBBBBB;
+}
+
+
+/* Allow the navbar to render over the spacer. */
+h1.spacer {
+    display: inline;
+}
+
+/* This is the large square around the page content. */
+#page_box {
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+    border-top: 0px;
+    background-color: #333333;
+    top: 50px;
+    left: 2%;
+    width: 96%;
+}
+
+/* Grow the title bar and put it in the center. */
+#page_box h1 {
+    text-align: center;
+}
+
+/* JavaScript warning message */
+#noscript_box {
+    display: block;
+    background-color: #DD8000;
+    color: #FFFFFF;
+    border: 2px solid #683200;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+#noscript_box h2 {
+    color: #FF0000;
+}
+
+#noscript_box p {
+    color: #EE0000;
+}
+
+
+/* Draw a big title bar */
+#page_box h1.title {
+    font-size: 50px;
+}
+
+/* Align and pad a bar of images. */
+div.images_inline {
+    position: relative;
+    justify-content: y;
+    left: 5%;
+    width: 93%;
+}
+
+/* Scale the images with the site */
+div.images_inline img {
+    max-width: 24%;
+}
+
+
+#page_box h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#page_box h2.small {
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+}
+
+#page_box a.link_std:visited {
+    color: #FF00FF
+}
+
+
+/* Item listing block for purchases. */
+div.listings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.item_listing {
+    padding: 5px;
+    padding-bottom: 25px;
+    text-align: center;
+    background-color: #444444;
+    width: 25%;
+    border: 1px solid #000000;
+}
+
+div .item_listing img {
+    max-width: 75%;
+    border-radius: 5px;
+}
+
+/* Style the link into a button */
+div .item_listing a {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: #DDDDDD;
+    text-decoration: none;
+    background-color: #656565;
+    border: 1px solid #000000;
+    transition-duration: 500ms;
+}
+
+div .item_listing a:hover {
+    background-color: #888888;
+    transition-duration: 500ms;
+}
+
+
+#page_box p {
+    position: relative;
+    left: 5%;
+    width: 90%;
+}
+
+
+/* Center and colorize the copyright. */
+h6.copyright {
+    text-align: center;
+}

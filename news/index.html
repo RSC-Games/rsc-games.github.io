@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- These fields ensure the search engine can find my site and match keywords. -->
+        <meta charset="UTF-8">
+        <meta name="description" content="RSC Games is a hardware and game development company committed 
+            to providing maximum enjoyment at a low price tag."> 
+        <meta name="keywords" content="RSC Games, SP, cheap gaming">
+        <meta name="author" content="RSC Games">
+
+        <!-- This is only here because W3Schools says I should add it. It is responsible for scaling of sites. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title> News | RSC Games </title>
+
+        <!-- Add a background and an image in the tab. -->
+        <link rel="stylesheet" href="../css/stylesheet.css">
+        <link rel="icon" href="../images/favicon.ico">
+    </head>
+    <body>
+        <!-- This navbar is hard to maintain across all pages. Maybe make a JS script inject a navbar here? -->
+        <div class="navbar">
+            <img class="logo" src="../images/controller_logo.png" href="index.html"/>
+
+            <nav align="right" class="links">
+                <a href="../index.html"> Home </a>
+                <a href="../products/index.html"> Products </a>
+                <a class="active" href="../news/index.html"> News </a>
+                <a href="../online/index.html"> Online </a>
+                <a href="../docs/index.html"> Docs </a>   
+                
+            </nav>
+        </div>
+
+        <!-- Because I set the navbar to fixed position an offsetting block is required to ensure the site renders properly. -->
+        <h1 class="spacer"> _ </h1>
+        <br>
+
+        <!-- Create a large box around the entire site contents.-->
+        <div id="page_box">
+
+        <!-- This site requires JavaScript. Warn the user if JavaScript is disabled. -->
+        <noscript>
+            <div id="noscript_box">
+                <h2><b> JavaScript is Disabled! </b></h2>
+                <p> This site requires the use of JavaScript to function properly. Please enable it in your browser settings.</p>
+            </div>
+        </noscript>
+
+        <!-- Webpage title and content goes here. -->
+        <h1 class="title"> News </h1>
+
+        <div class="listings">
+            <div class="item_listing">
+                <h3> RSC Games SP Release Status </h3>
+                <p><i> Published 6/6/2023 </i></p>
+                <p> Our greatest product, preparing for release soon. </p>
+                <br>
+                <a href="sp_article.html"> Read Article </a>
+            </div>
+
+        </div>
+
+        <!-- Show an up-to-date copyright at the bottom. -->
+        <br>
+        <br>
+        <h6 class="copyright"> &copy 2020-present RSC Games. All Rights Reserved. </h6>
+        <script src="../scripts/autocopy.js"></script>
+        </div>
+    </body>
+</html>
