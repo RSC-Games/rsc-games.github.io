@@ -9,16 +9,18 @@ body {
     position: fixed;
     background-color: #555555;
     display: block;
-    margin: 0;
+    margin: 1;
     width: 100%;
-    border: 1px solid #000000;
-
+    border: 1px solid #111111;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 8px;
     z-index: 100;
 }
 
 /* Special configuration for the controller logo so it matched the height. */
 .navbar .logo {
-    height: 38px;
+    height: 40px;
+    border-radius: 10px;
     float: left;
     padding: 5px;
 }
@@ -28,8 +30,9 @@ body {
     padding: 15px;
     padding-right: 0px;
     padding-left: 0px;
+    border-right: 1px solid #111111;
     float: right;
-    border: 1px solid #000000;
+    height: 100%;
     border-top: 0px;
     border-bottom: 0px;
 }
@@ -37,13 +40,13 @@ body {
 /* Add the highlighting and box coloring for each link. */
 .navbar .links a {
     text-align: center;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 17px;
     padding-left: 17px;
     padding-right: 14px;
     color: #DDDDDD;
     text-decoration: none;
     background-color: #656565;
-    border-right: 1px solid #000000;
     transition-duration: 500ms;
 }
 
@@ -74,16 +77,19 @@ body {
 
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px #AAAAAA;
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #BBBBBB;
+    border-radius: 5px;
 }
 
 
 /* Allow the navbar to render over the spacer. */
 h1.spacer {
     display: inline;
+    color: #333333;
 }
 
 /* This is the large square around the page content. */
@@ -92,15 +98,18 @@ h1.spacer {
     position: absolute;
     border: 1px solid black;
     border-top: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     background-color: #333333;
     top: 50px;
-    left: 2%;
-    width: 96%;
+    left: 5%;
+    width: 90%;
 }
 
 /* Grow the title bar and put it in the center. */
 #page_box h1 {
     text-align: center;
+    font-family: 'Segoe UI' Candara;
 }
 
 /* JavaScript warning message */
@@ -125,10 +134,36 @@ h1.spacer {
 }
 
 
-/* Draw a big title bar */
-#page_box h1.title {
-    font-size: 50px;
+/* Draw the big animated title bar */
+.title-banner {
+    margin-top: 1.8%;
+    margin-bottom: 50px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
 }
+
+/* Scale the title-banner gif and make sure it remains a banner. */
+.title-banner img {
+    align-content: center;
+    height: auto;
+    object-fit: contain;
+    max-width: 96%;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+#page_box .title-banner h1.title-inline {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 60px;
+    font-weight: 400;
+    color: white;
+}
+
 
 /* Align and pad a bar of images. */
 div.images_inline {
@@ -143,16 +178,29 @@ div.images_inline img {
     max-width: 24%;
 }
 
+#page_box h1.page_header {
+    font-size: 40px;
+    font-weight: 100;
+    color: white;
+}
 
 #page_box h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Segoe UI';
 }
 
 #page_box h2.small {
     text-align: center;
     font-size: 20px;
     font-style: normal;
+}
+
+/* Represent a paragraph blurb for users to read and be interested in. */
+#page_box p.para_box {
+    text-indent: 5%;
+    font-size: 20px;
 }
 
 #page_box a.link_std:visited {
@@ -169,15 +217,17 @@ div.listings {
 
 div.item_listing {
     padding: 5px;
-    padding-bottom: 25px;
+    padding-bottom: 40px;
     text-align: center;
     background-color: #444444;
     width: 25%;
     border: 1px solid #000000;
+    border-radius: 10px;
 }
 
 div .item_listing img {
     max-width: 75%;
+    border: 1px solid #111111;
     border-radius: 5px;
 }
 
@@ -185,11 +235,11 @@ div .item_listing img {
 div .item_listing a {
     text-align: center;
     padding: 15px;
-    margin-bottom: 15px;
     color: #DDDDDD;
     text-decoration: none;
     background-color: #656565;
     border: 1px solid #000000;
+    border-radius: 10px;
     transition-duration: 500ms;
 }
 
@@ -200,9 +250,12 @@ div .item_listing a:hover {
 
 
 #page_box p {
+    display: flex;
     position: relative;
-    left: 5%;
-    width: 90%;
+    justify-content: center;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 
